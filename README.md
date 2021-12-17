@@ -1,12 +1,12 @@
 
 # COMS6998-PDLSP-Final-Project
 
-This repo holds the code for Columbia University COMS 6998 Practical Deep Learning System Performance Final Project. The **AbftTensor.ipynb** contains our experimentation and implementation of ABFT tensor to Keras API. The **ActivationRangeSupervision.ipynb** contains our implementation of Activation Range Supervision method and experimentation steps and results. 
+This repo holds the code for Columbia University COMS 6998 Practical Deep Learning System Performance Final Project. The **AbftTensor.ipynb** contains our experimentation and implementation of ABFT tensor to Keras API. The **ActivationRangeSupervision.ipynb** contains our implementation of Activation Range Supervision method, experimentation steps and results. 
 
 
 # Project Overview
 
-For this project, Our goal was to test the effectiveness of various ML Silent Data Corruption error detection techniques on different types of deep learning models. We hope through our experiementation we will be able to gain an understanding of how effective the methods can be when applied to models not mentioned in the papers.
+For this project, our goal was to test the effectiveness of various ML Silent Data Corruption error detection techniques on different types of deep learning models. We hope through our experiementation we will be able to gain an understanding of how effective the methods can be when applied to models not mentioned in the papers.
 
 
 
@@ -16,9 +16,7 @@ We have experimented with two following approaches:
 -   Create a custom ABFT tensor that will implement a checksum to safeguard against SDC similar to [Li et al.](https://arxiv.org/pdf/2103.00130.pdf)
     
 -   Protect matmul AxB operations with checksum rows and columns
-    
--   Focus on Keras/Tensorflow
-    
+        
 -   Implement between Keras and Tensorflow layers
 
 ## Activation Range Supervision
@@ -39,7 +37,7 @@ The ABFT performed with around 3% overhead for our ABFT implementation for train
 
 ### Activation Range Supervision
 
-Activation Range Supervision significantly reduced the SDC in cifar10 and boston housing. Cifar10 performs great because the [paper](https://arxiv.org/pdf/2108.07019.pdf) as shown that the method works well with CNN. It is surprising that the method works really well for Dense NN (boston_housing) but it does not prevent SDC with LSTM(imdb)
+Activation Range Supervision significantly reduced the SDC in cifar10 and boston housing. Cifar10 performs great because the [paper](https://arxiv.org/pdf/2108.07019.pdf) as shown that the method works well with CNN. It is surprising that the method works well for Dense NN (boston_housing) but it does not prevent SDC with LSTM(imdb)
 
 
 ![Activation Range Supervision Performance](Activation_Range_Supervision_Performance.png)

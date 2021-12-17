@@ -40,7 +40,7 @@ The ABFT performed with around 3% overhead for our ABFT implementation for train
 Activation Range Supervision significantly reduced the SDC in cifar10 and boston housing. Cifar10 performs great because the [paper](https://arxiv.org/pdf/2108.07019.pdf) as shown that the method works well with CNN. It is surprising that the method works well for Dense NN (boston_housing) but it does not prevent SDC with LSTM(imdb)
 
 
-![Activation Range Supervision Performance](Activation_Range_Supervision_Performance.png)
+![Activation Range Supervision Performance](./Activation_Range_Supervision_Performance.png)
 
 
 
